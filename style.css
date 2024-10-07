@@ -12,6 +12,8 @@ body{
   justify-content: center;
   margin-top: 2em;
 }
+
+//common css for buttons
 .btn{
     background-color: #D3C4E3;
     border: none;
@@ -22,9 +24,13 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .btn:hover{
-    background-color: #b9adc6
+    background-color: #b9adc6;
 }
 
+
+
+
+//main background
 .app{
     position: relative;
     display: flex;
@@ -36,6 +42,10 @@ body{
     background-color: #58504A;
     
 }
+
+
+//pop-window
+
 .overlay{
     position: absolute;
     display: none;
@@ -92,12 +102,19 @@ input::placeholder{
     justify-content: center;
     gap: 10px;
 }
+.cancel-add-btn{
+    width: 100px;
+    background-color: #41D3BD;
+}
+.cancel-add-btn:hover{
+    background-color: #36ac9b;
+}
 
 
 
 
 
-
+// side bar
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -109,6 +126,12 @@ input::placeholder{
     padding: 10px;
     border-radius: 10px;;
 }
+.side-btns{
+    width: 70%;
+}
+
+
+//tasks area
 
 .task-cont{
     width: 72%;
@@ -121,8 +144,6 @@ input::placeholder{
     background-color: #DBB1BC;
     
 }
-
-
 
 h1{
     
@@ -155,15 +176,5 @@ h1{
     width: 100%;
 }
 
-.cancel-add-btn{
-    width: 100px;
-    background-color: #41D3BD;
-}
-.cancel-add-btn:hover{
-    background-color: #36ac9b;
-}
 
-.side-btns{
-    width: 70%;
-}
 
