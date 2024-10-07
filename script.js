@@ -11,21 +11,22 @@ const taskDate = document.getElementById("task-date");
 const taskDescription = document.getElementById("task-description");
 const taskCont = document.getElementById("task-cont");
 
-addBtn.addEventListener("click",(ev) => {
+
+// this will open the pop-window
+addBtn.addEventListener("click",() => {
     overlay.style.display = "flex";
     taskFormCont.style.display = "flex";
-    console.log(ev.target)
+
 });
 
+
+// this will close the pop-window
 cancelTask.addEventListener("click",() => {
     overlay.style.display = "none";
     taskFormCont.style.display = "none";
 });
 
-function addingTask(taskObject) {
-    taskData.push(taskObject);
-}
-
+//adding task to taskData array 
 addTask.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent the default form submission
 
@@ -52,7 +53,7 @@ addTask.addEventListener("submit", (event) => {
 
 
 
-
+// this will render the task in html
 function render() {
     taskCont.innerHTML = "";
      taskData.forEach((item,index) => { 
@@ -72,8 +73,9 @@ function render() {
      attachDeleteListeners();
 }
 
-console.log(taskData);
 
+
+// this will delete the tasks
 function attachDeleteListeners() {
     const deleteBtns = document.querySelectorAll(".delete-btn");
     deleteBtns.forEach((item) => {
