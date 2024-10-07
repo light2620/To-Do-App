@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <title>To Do App</title>
+</head>
+<body>
+    
+    <main class="app">
+   
+
+
+        <div class="overlay">
+            <div class="task-form-cont" id="task-form-cont">
+               <form class="task-form" id="task-form">
+                <input type="text" class="task-detail" id="task-head" placeholder = "Heading" required>
+                <input type="Date" class="task-detail" id="task-date" placeholder = "date" required>
+                <textarea id="task-description" class="task-description" placeholder="Description"></textarea>
+               </form>
+               <div class="cancel-add" id="cancel-add-btn">
+                   <button type="submit" form="task-form"class="cancel-add-btn btn" id="add-task">Add Task</button>
+                   <button class="cancel-add-btn btn" id="cancel-task">Canel</button>
+               </div>
+           </div>
+           </div>
+
+         <div class="sidebar" id="sidebar">
+             <button class="side-btns btn" id="add-btn">Add</button>
+             <button class="side-btns btn" id="delete-all">Delete All</button>
+         </div>
+
+
+         <div class="task-cont" id="task-cont">
+             <h1>Add your task here</h1>
+
+            <!-- <div class="tasks" id="tasks">
+                <div class="task-info" id="task-info">
+                    <div class="heading" id="heading">Gym</div>
+                    <div class="date" id="date">10-12-2024</div>
+                    <div class="description" id="description">30 min gym every day</div>
+                </div>
+                <div class="edit-delete-btn" id="edit-delete-bt">
+                    <button class="edit-btn task-btn" id="edit-btn">Edit</button>
+                    <button class="delete-btn task-btn" id="delete">Delete</button>
+                </div>
+            </div> -->
+
+         </div>
+
+
+
+
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
