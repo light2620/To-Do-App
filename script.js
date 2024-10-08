@@ -135,6 +135,7 @@ taskHeading.value = "";
             taskDate.value = "";
             taskDescription.value = "";
             prioritySelection.value = prioritySelection.selectedIndex = 0;
+    document.getElementById("add-task").innerText = "Add Task";
     
 }
 
