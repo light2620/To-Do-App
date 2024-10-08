@@ -131,6 +131,11 @@ function editTasks() {
             document.getElementById("add-task").innerText = "Update Text";
         });
     });
+taskHeading.value = "";
+            taskDate.value = "";
+            taskDescription.value = "";
+            prioritySelection.value = prioritySelection.selectedIndex = 0;
+    
 }
 
 
