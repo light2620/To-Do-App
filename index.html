@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <title>To Do App</title>
+</head>
+<body>
+    
+    <main class="app">
+   
+
+<!-- pop window for task form -->
+        <div class="overlay">
+            <div class="task-form-cont" id="task-form-cont">
+               <form class="task-form" id="task-form">
+                <input type="text" class="task-detail" id="task-head" placeholder = "Heading" required>
+                <input type="Date" class="task-detail" id="task-date" placeholder = "date" required>
+                <textarea id="task-description" class="task-description" placeholder="Description"></textarea>
+                <select id="priority-select"> 
+                    <option   value="" selected disabled hidden>Select Priority</option>
+                    <option id="Top-Priority"  value="Top Priority">Top Priority</option>
+                    <option id="Low-Priority"  value="Low Priority">Low Priority</option>
+                 </select>
+               </form>
+               <div class="cancel-add" id="cancel-add-btn">
+                   <button type="submit" form="task-form"class="cancel-add-btn btn" id="add-task">Add Task</button>
+                   <button class="cancel-add-btn btn" id="cancel-task">Canel</button>
+               </div>
+           </div>
+           </div>
+<!-- pop window for task form -->
+
+
+<!-- side bar for adding,deleteing and filtering the tasks -->
+         <div class="sidebar" id="sidebar">
+             <button class="side-btns btn" id="add-btn">Add</button>
+             <button class="side-btns btn" id="delete-all">Delete All</button>
+             <select  class="filter btn" id="filter"> 
+                <option   value="" selected disabled hidden>Priority</option>
+                <option class ="priority"  value="Top Priority">Top Priority</option>
+                <option class ="priority"  value="Low Priority">Low Priority</option>
+             </select>
+             <button class="btn reset-filter" id="reset-filter">Rest Filter</button>
+         </div>
+
+<!-- side bar for adding,deleteing and filtering the tasks -->
+
+
+<!-- where the tasks will be shown -->
+         <div class="task-cont" id="task-cont">
+             <h1>Add your task here</h1>
+
+         </div>
+
+<!-- where the tasks will be shown -->
+
+
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
